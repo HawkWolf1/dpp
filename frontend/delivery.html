@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="delivery.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+</head>
+<body>
+        
+    <form id="deliveryForm">
+        <h2>DVD Delivery Details</h2>
+
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required>
+
+        <label for="mobileNo">Mobile No:</label>
+        <input type="tel" id="phoneNo" name="phoneNo" required>
+
+        <label for="movieName">Movie Name:</label>
+        <input type="text" id="movieName" name="movieName" required>
+
+        <label for="rent">Rent for each DVD:</label>
+        <input type="number" id="rent" name="rent" required>
+
+        <label for="daysRented">Number of Days Rented:</label>
+        <input type="number" id="daysRented" name="daysRented" required>
+
+        <label for="deliveryCharge" >Delivery Charge (fixed):</label>
+        
+        <input type="number" id="deliveryCharge" name="deliveryCharge" value="45" readonly required>
+
+        <button type="button" id="details">Add Details</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="delivery.js" type="module"></script>
+</body>
+</html>
